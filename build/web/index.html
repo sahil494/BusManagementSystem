@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="newcss.css">
+</head>
+<body class="min-vh-100 min-vw-100">
+<section class="section-landing d-flex container-fluid min-vh-100 min-vw-100 pl-0 pr-0">
+<section class="overlay min-vh-100 min-vw-100">
+<div class="row min-vh-100 min-vw-100 mx-auto align-items-center justify-content-center text-center">
+<div class="center-heading col-12 align-self-center">
+<h1>Bus Management System</h1>
+</div>
+<div class="w-100"></div>
+<div class="col-12 align-self-end mb-4">
+<i class="scroll-icon fas fa-angle-double-down"></i>
+</div>
+</div>
+</section>
+</section>
+<section class="section-landing d-flex container-fluid min-vh-100 min-vw-100 pl-0 pr-0">
+<section class="overlay login-overlay min-vh-100 min-vw-100 d-flex justify-content-center align-items-center">
+<form name="MyForm" action="adminservlet" method="post" onsubmit="return myValidation()" class="mx-auto w-25 h-75 login-form d-flex flex-column align-items-center justify-content-top text-center p-2">
+<h1>Login</h1>
+<div class="mt-auto mb-auto">
+<div class="form-group">
+<label for="exampleInputEmail1">Email address</label>
+<input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Password</label>
+<input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+</div>
+<div class="form-group">
+<label class="form-check-label" for="accountStatus">
+Account Status
+</label><br>
+<select name="status" id="accountStatus" class="form-control">
+<option value="User">User</option>
+<option value="Staff">Staff</option>
+<option value="Admin">Admin</option>
+</select>
+</div>
+<!--<h4><b><a href="signup.jsp">Sign-Up?</b></a></h4>-->
+<!--<br>-->
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+</section>
+</section>
+     <script>
+	function myValidation()
+	{
+		var value = document.forms["MyForm"]["email"].value;
+		var value2 = document.forms["MyForm"]["password"].value;
+		var flag=true;
+		if (value=="")
+		{
+			alert("Email cannot be empty");
+			flag=false;
+		}
+		if (value2=="")
+		{
+			alert("Password cannot be empty");
+			flag=false;
+		}
+		return flag;
+	}
+	</script>
+</body>
+</html>

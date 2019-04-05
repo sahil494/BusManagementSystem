@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+	height: 100vh;
+}
+
+
+.section-landing {
+	background: url("bus.jpg") no-repeat;
+	background-size: cover;
+}
+
+.overlay {
+	background: rgba(1, 50, 67, 0.7);
+	z-index: 10;
+	color: white;
+}
+
+.center-heading {
+	margin: 15rem;
+}
+
+.scroll-icon {
+	font-size: 35px;
+}
+
+.login-form {
+	background: white;
+	color: black;
+	border-radius: 15px;
+}
+
+.login-overlay {
+	background: #2f3640;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
